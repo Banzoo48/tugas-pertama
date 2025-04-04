@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Portofolio Sederhana</title>
+    <style>
+
+        h2{
+            color: rgb(5, 5, 14);
+        }
+        /* Reset styling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body styling */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            padding: 0px;
+            background-color: #f4f4f4;
+        }
+
+        /* Header Menu */
+        .menu {
+            display: grid;
+            grid-template-columns: 70% 10% 10% 10%;
+            gap: 0px;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        .menu a {
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            text-decoration: none;
+            display: block;
+        }
+
+        .menu h1 {
+            background-color: #333;
+            color: rgb(255, 255, 255);
+            font-size: 26px;
+            text-align: left;
+        }
+
+        .menu a:hover {
+            background-color: #555;
+        }
+
+        /* Section 2 - Judul dan Gambar */
+        .section2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            align-items: center;
+            margin-bottom: 20px;
+            text-align: center;
+            background-color: rgb(208, 212, 211);
+        }
+
+        .section2 img {
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+            padding: 5px;
+        }
+
+        .button-blue {
+            background-color: rgb(31, 31, 190);
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        /* Section 3 - Biodata */
+        .section3 {
+            margin-bottom: 20px;
+        }
+
+        .section3 h2, .section3 p {
+            text-align: center;
+        }
+
+        .section3 .grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin-top: 20px;
+            color: rgba(46, 46, 209, 0.76);
+            font-weight: bold;
+        }
+
+        .text-black {
+            color: black;
+            font-weight: lighter;
+        }
+
+        .section3 .grid div {
+            background-color: rgba(255, 255, 255, 0.685);
+            padding: 20px;
+            text-align: center;
+            border: 1px solid #ddd;
+        }
+
+        /* Section 4 - Portofolio */
+        .section4 {
+            margin-bottom: 20px;
+            background-color: #f4f4f4;
+            padding: 5px;
+        }
+
+        .section4 h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .section4 .grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .section4 .grid div {
+            background-color: white;
+            padding: 20px;
+            text-align: center;
+            border: 1px solid #ddd;
+        }
+
+        .section4 img {
+            width: 100%;
+            max-width: 200px;
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+        /* Media Queries - Responsiveness */
+        @media (max-width: 768px) {
+            .section2 {
+                grid-template-columns: 1fr;
+            }
+
+            .section3 .grid {
+                grid-template-columns: 1fr;
+            }
+
+            .section4 .grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .menu {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        footer{
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Section 1: Menu -->
+    <div class="menu">
+        <h1> Portofolio</h1>
+        <a href="#section2">Header</a>
+        <a href="#section3">Biodata</a>
+        <a href="#section4">Portofolio</a>
+    </div>
+
+    <!-- Section 2: Judul di Kiri dan Gambar di Kanan -->
+    <div class="section2" id="section2">
+        <div>
+            <h1>Selamat Datang di Website Saya</h1>
+            <p>Ini adalah contoh header dengan dua kolom. kolom kiri berisi teks seperti ini.</p>
+            <br>
+            <button class="button-blue">Pelajari lebih lanjut</button>
+        </div>
+        <div>
+            <img src="https://civilrights.msu.edu/_assets/images/placeholder/placeholder-600x600.jpg" alt="Gambar Placeholder">
+        </div>
+    </div>
+
+    <!-- Section 3: Biodata dengan 6 Box -->
+    <div class="section3" id="section3">
+        <h2>About Me</h2>
+        <p>A brief introduction about myself</p>
+        <div class="grid">
+            <div>
+                Full Name :
+                <span class="text-black">Akhmad Subhan</span>
+            </div>
+            <div>
+                Education : 
+                <span class="text-black">S1 Sistem Informasi</span>
+            </div>
+            <div>
+                Pekerjaan : 
+                <span class="text-black">Project Leader</span>
+            </div>
+            <div>
+                Contact : 
+                <span class="text-black">akhmadsubhan48@gmail.com</span>
+            </div>
+            <div>
+                Hobi :
+                <span class="text-black">Bersepeda, Jogging</span>
+            </div>
+            <div>
+                Alamat :
+                <span class="text-black"> Jakarta Timur</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Section 4: Portofolio -->
+    <div class="section4" id="section4">
+        <h2>Portofolio</h2>
+        <div class="grid">
+            <div>
+                <img src="https://civilrights.msu.edu/_assets/images/placeholder/placeholder-200x200.jpg" alt="Gambar Placeholder">
+                <h3>Proyek 1</h3>
+                <p>Deskirpsi Proyek 1.</p>
+            </div>
+            <div>
+                <img src="https://civilrights.msu.edu/_assets/images/placeholder/placeholder-200x200.jpg" alt="Gambar Placeholder">
+                <h3>Proyek 2</h3>
+                <p>Deskripsi Proyek 2.</p>
+            </div>
+            <div>
+                <img src="https://civilrights.msu.edu/_assets/images/placeholder/placeholder-200x200.jpg" alt="Gambar Placeholder">
+                <h3>Proyek 3</h3>
+                <p>Deskripsi Proyek 3.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+     <footer>
+        <p>&copy; 2025 Website Saya | Akhmad Subhan | All right reserved</p>
+     </footer>
+
+</body>
+</html>
