@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas 4 - Landing Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+
+    <style>
+      .hover-zoom {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+    
+      .hover-zoom:hover {
+        transform: scale(1.05);
+        box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+      }
+    </style>
+
+  </head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary bg-white" >
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="https://cdn-icons-png.flaticon.com/128/4549/4549343.png" alt="Logo" width="30" height="27" class="d-inline-block align-text-top">
+                Banzoo
+              </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#home-page">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#About-me">About Me</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#services">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#MyProjects">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Testimonials</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#footer">Contact</a>
+              </li>
+            </ul>
+            <button type="button" class="btn btn-dark">Download CV</button>
+          </div>
+        </div>
+      </nav>
+      <div class="container" id="home-page">
+        <div class="row">
+            <div class="col-lg-6">
+                <br>
+                <br>
+                <p class="h6"> Hi Iam </p>
+                <p class="h6" style="color:orange;"> Akhmad Subhan </p>
+                <p class="h1"> Web </p>
+                <p class="h1"> Developer</p>
+                <p class="text-justify"> Lorem ipsum dolor sit amet, consectetur adipiscing elit Donec nec tempus massa, Aliquam non ligula vel enim tempor hendrerit ut et mauris Vestibulum efficitur enim ut libero commodo, et porttitor felis pulvinar, Nunc lobortis est arcu, sit amet maximus est luctus a Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
+                <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#modal_hire">Hire Me</button>
+            </div>
+            <div class="col-lg-6" style="background-color: white">
+                <img src="https://i.imgur.com/YwW8wRE.jpeg" class="img-fluid rounded-circle d-block mx-auto" width="400px" height="100px" alt="...">
+                <!-- Membuat baris logo berderet -->  
+                <div class="container mt-3">
+                    <div class="d-flex justify-content-center text-center gap-3">
+                      <a href="https://www.example.com" target="_blank" class="text-dark">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                            <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+                          </svg>
+                      </a>
+
+                      <a href="https://www.example.com" target="_blank" class="text-dark">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16">
+                            <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
+                          </svg>
+                      </a>
+
+                      <a href="https://www.example.com" target="_blank" class="text-dark">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                            <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+                          </svg>
+                        </a>
+
+                      <a href="https://www.example.com" target="_blank" class="text-dark">  
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                            <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
+                          </svg>
+                      </a>
+                    </div>
+                 </div>
+              </div>
+            </div>
+        </div>
+      </div>
+      <!-- Membuat bagian about me-->
+      <div class="container mt-3" id="About-me">
+        <div class="row">
+          <div class="col-lg-12">  
+            <p class="h1 text-center"> About Me </p>
+            <p class="text-center"> Lorem ipsum dolor sit amet, consectetur adipiscing elit Donec nec tempus massa, Aliquam non ligula vel enim tempor hendrerit ut et mauris Vestibulum efficitur enim ut libero commodo,Aliquam non ligula vel enim tempor hendrerit </p>
+            
+          </div>
+        </div>
+      </div>
+
+       <!-- Membuat bagian 6 box-->
+      <div class="container mt-5">
+        <div class="row text-start">
+          
+          <div class="col-lg-4 d-flex align-items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
+              <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+            </svg>
+             <!-- Teks di samping logo -->
+            <div>
+              <p><h4 class="d-inline ms-3">Full Name</h4></p>
+              <p class="d-inline ms-3">Akhmad Subhan</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 d-flex align-items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-book" viewBox="0 0 16 16">
+              <path d="M1 2.828c.885-.37 2.154-.769 3.388-.893 1.33-.134 2.458.063 3.112.752v9.746c-.935-.53-2.12-.603-3.213-.493-1.18.12-2.37.461-3.287.811zm7.5-.141c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783"/>
+            </svg>
+             <!-- Teks di samping logo -->
+            <div>
+              <p><h4 class="d-inline ms-3">Education</h4></p>
+              <p class="d-inline ms-3">S1 Sistem informasi</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 d-flex align-items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-briefcase" viewBox="0 0 16 16">
+              <path d="M6.5 1A1.5 1.5 0 0 0 5 2.5V3H1.5A1.5 1.5 0 0 0 0 4.5v8A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-8A1.5 1.5 0 0 0 14.5 3H11v-.5A1.5 1.5 0 0 0 9.5 1zm0 1h3a.5.5 0 0 1 .5.5V3H6v-.5a.5.5 0 0 1 .5-.5m1.886 6.914L15 7.151V12.5a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5V7.15l6.614 1.764a1.5 1.5 0 0 0 .772 0M1.5 4h13a.5.5 0 0 1 .5.5v1.616L8.129 7.948a.5.5 0 0 1-.258 0L1 6.116V4.5a.5.5 0 0 1 .5-.5"/>
+            </svg>
+             <!-- Teks di samping logo -->
+            <div>
+              <p><h4 class="d-inline ms-3">Pekerjaan</h4></p>
+              <p class="d-inline ms-3">Project Leader</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row text-start mt-4">
+          
+          <div class="col-lg-4 d-flex align-items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-person-vcard" viewBox="0 0 16 16">
+              <path d="M5 8a2 2 0 1 0 0-4 2 2 0 0 0 0 4m4-2.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5M9 8a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4A.5.5 0 0 1 9 8m1 2.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5"/>
+              <path d="M2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2zM1 4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H8.96q.04-.245.04-.5C9 10.567 7.21 9 5 9c-2.086 0-3.8 1.398-3.984 3.181A1 1 0 0 1 1 12z"/>
+            </svg>
+             <!-- Teks di samping logo -->
+            <div>
+              <p><h4 class="d-inline ms-3">Contact</h4></p>
+              <p class="d-inline ms-3">akhmadsubhan48@gmail.com</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 d-flex align-items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-person-arms-up" viewBox="0 0 16 16">
+              <path d="M8 3a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3"/>
+              <path d="m5.93 6.704-.846 8.451a.768.768 0 0 0 1.523.203l.81-4.865a.59.59 0 0 1 1.165 0l.81 4.865a.768.768 0 0 0 1.523-.203l-.845-8.451A1.5 1.5 0 0 1 10.5 5.5L13 2.284a.796.796 0 0 0-1.239-.998L9.634 3.84a.7.7 0 0 1-.33.235c-.23.074-.665.176-1.304.176-.64 0-1.074-.102-1.305-.176a.7.7 0 0 1-.329-.235L4.239 1.286a.796.796 0 0 0-1.24.998l2.5 3.216c.317.316.475.758.43 1.204Z"/>
+            </svg>
+             <!-- Teks di samping logo -->
+            <div>
+              <p><h4 class="d-inline ms-3">Hobi</h4></p>
+              <p class="d-inline ms-3">Jogging, Bersepeda, Coding</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 d-flex align-items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-house-door" viewBox="0 0 16 16">
+              <path d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293zM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4z"/>
+            </svg>
+             <!-- Teks di samping logo -->
+            <div>
+              <p><h4 class="d-inline ms-3">Alamat</h4></p>
+              <p class="d-inline ms-3">DKI Jakarta, Jakarta Timur</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+           <!-- Membuat bagian my projects-->
+           <div class="container mt-5" id="MyProjects">
+            <div class="row">
+              <div class="col-lg-12">  
+                <p class="h1 text-center"> My Projects</p>
+                <p class="text-center"> Lorem ipsum dolor sit amet, consectetur adipiscing elit Donec nec tempus massa, Aliquam non ligula vel enim tempor hendrerit ut et mauris Vestibulum efficitur enim ut libero commodo,Aliquam non ligula vel enim tempor hendrerit </p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="d-flex justify-content-center text-center gap-3">
+                <button class="btn btn-outline-primary" onclick="filterGallery('all')">All</button>
+                <button class="btn btn-outline-primary" onclick="filterGallery('ui_ux')">UI/UX</button>  
+                <button class="btn btn-outline-primary" onclick="filterGallery('web_design')">Web Design</button>
+                <button class="btn btn-outline-primary" onclick="filterGallery('app_design')">App Design</button>
+                <button class="btn btn-outline-primary" onclick="filterGallery('graph_design')">Graphic Design</button>
+              </div>
+            </div>
+            
+            <!-- Membuat bagian isi galeri my projects-->
+            <div class="mt-3 category-images row" id="ui_ux">
+              <div class="row justify-content-center">
+                <div class="col-lg-4">  
+                  <img src="https://i.imgur.com/YZMk3F3.jpeg" class="img-fluid hover-zoom" alt="Gambar 1">
+                  <p class="h5 text-center"> UI/UX 1</p>
+                  <p class="text-center"> Lorem ipsum dolor sit amet</p>
+                </div>
+                <div class="col-lg-4">  
+                  <img src="https://i.imgur.com/YZMk3F3.jpeg" class="img-fluid hover-zoom" alt="Gambar 1">
+                  <p class="h5 text-center"> UI/UX 2</p>
+                  <p class="text-center"> Lorem ipsum dolor sit amet</p>
+                </div>
+                <div class="col-lg-4">  
+                  <img src="https://i.imgur.com/YZMk3F3.jpeg" class="img-fluid hover-zoom" alt="Gambar 1">
+                  <p class="h5 text-center"> UI/UX 3</p>
+                  <p class="text-center"> Lorem ipsum dolor sit amet</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="container mt-5 category-images row" id="web_design">
+              <div class="row">
+                <div class="col-lg-4">  
+                  <img src="https://i.imgur.com/lwlnnxP.jpeg" class="img-fluid hover-zoom" alt="Gambar 1">
+                  <p class="h5 text-center"> Web Design 1</p>
+                  <p class="text-center"> Lorem ipsum dolor sit amet</p>
+                </div>
+                <div class="col-lg-4">  
+                  <img src="https://i.imgur.com/lwlnnxP.jpeg" class="img-fluid hover-zoom" alt="Gambar 1">
+                  <p class="h5 text-center"> Web Design 2</p>
+                  <p class="text-center"> Lorem ipsum dolor sit amet</p>
+                </div>
+                <div class="col-lg-4">  
+                  <img src="https://i.imgur.com/lwlnnxP.jpeg" class="img-fluid hover-zoom" alt="Gambar 1">
+                  <p class="h5 text-center"> Web Design 3</p>
+                  <p class="text-center"> Lorem ipsum dolor sit amet</p>
+                </div>
+              </div>
+            </div>
+  
+            <div class="container mt-5 category-images row" id="app_design">
+              <div class="row">
+                <div class="col-lg-4">  
+                  <img src="https://i.imgur.com/GzeH6vn.jpeg" class="img-fluid hover-zoom" alt="Gambar 1">
+                  <p class="h5 text-center"> App Design 1</p>
+                  <p class="text-center"> Lorem ipsum dolor sit amet</p>
+                </div>
+                <div class="col-lg-4">  
+                  <img src="https://i.imgur.com/GzeH6vn.jpeg" class="img-fluid hover-zoom" alt="Gambar 1">
+                  <p class="h5 text-center"> App Design 2</p>
+                  <p class="text-center"> Lorem ipsum dolor sit amet</p>
+                </div>
+                <div class="col-lg-4">  
+                  <img src="https://i.imgur.com/GzeH6vn.jpeg" class="img-fluid hover-zoom" alt="Gambar 1">
+                  <p class="h5 text-center"> App Design 3</p>
+                  <p class="text-center"> Lorem ipsum dolor sit amet</p>
+                </div>
+              </div>
+            </div>
+  
+            <div class="container mt-5 category-images row" id="graph_design">
+              <div class="row">
+                <div class="col-lg-4">  
+                  <img src="https://i.imgur.com/4y1xzlP.jpeg" class="img-fluid hover-zoom" alt="Gambar 1">
+                  <p class="h5 text-center"> Graphic Design 1</p>
+                  <p class="text-center"> Lorem ipsum dolor sit amet</p>
+                </div>
+                <div class="col-lg-4">  
+                  <img src="https://i.imgur.com/4y1xzlP.jpeg" class="img-fluid hover-zoom" alt="Gambar 1">
+                  <p class="h5 text-center"> Graphic Design 2</p>
+                  <p class="text-center"> Lorem ipsum dolor sit amet</p>
+                </div>
+                <div class="col-lg-4">  
+                  <img src="https://i.imgur.com/4y1xzlP.jpeg" class="img-fluid hover-zoom" alt="Gambar 1">
+                  <p class="h5 text-center"> Graphic Design 3</p>
+                  <p class="text-center"> Lorem ipsum dolor sit amet</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Modal -->
+          <div class="modal fade" id="modal_hire" tabindex="-1" aria-labelledby="modal_hireLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <!-- Header Modal -->
+                <div class="modal-header">
+                  <h5 class="modal-title" id="modal_hireLabel">Form Hire Me</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <!-- Isi Modal -->
+                <div class="modal-body">
+                  <form>
+                    <p>Please complete the following form</p>
+                    <div class="mb-3">
+                      <label for="recipient-name" class="col-form-label">Recruiter (Company/Person):</label>
+                      <input type="text" class="form-control" id="recruiter-name">
+                    </div>
+
+                    <div class="mb-3">
+                      <label for="recipient-name" class="col-form-label">Contact (Email/Phone Number):</label>
+                      <input type="text" class="form-control" id="recruiter-name">
+                    </div>
+                    
+                    <div class="mb-3">
+                      <label for="recipient-name" class="col-form-label">Job Detail:</label>
+                      <input type="text" class="form-control" id="recruiter-name">
+                    </div>
+
+                    <div class="mb-3">
+                      <label for="message-text" class="col-form-label">Message:</label>
+                      <textarea class="form-control" id="message-text"></textarea>
+                    </div>
+                  </form>
+                </div>
+
+                <!-- Footer Modal -->
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Submit</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Menu service-->
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-12 mt-5" id="services">
+                <p class="h1 text-center"> Services </p>
+                <p class="text-center"> Lorem ipsum dolor sit amet, consectetur adipiscing elit Donec nec tempus massa, Aliquam non ligula vel enim tempor hendrerit ut et mauris Vestibulum efficitur enim ut libero commodo,Aliquam non ligula vel enim tempor hendrerit </p>
+                <div id="carouselExampleCaptions" class="carousel slide">
+                  <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                  </div>
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="https://plus.unsplash.com/premium_photo-1678565869434-c81195861939?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="d-block w-100" alt="..." style="height: 500px;">
+                      <div class="carousel-caption d-none d-md-block">
+                        <h3>Web Developer</h3>
+                        <p>Some representative placeholder content for the first slide.</p>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <img src="https://plus.unsplash.com/premium_photo-1683147638125-fd31a506a429?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="d-block w-100" alt="..." style="height: 500px;">
+                      <div class="carousel-caption d-none d-md-block">
+                        <h3>Graphic Design</h3>
+                        <p>Some representative placeholder content for the second slide.</p>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="d-block w-100" alt="..." style="height: 500px;">
+                      <div class="carousel-caption d-none d-md-block">
+                        <h3>Data Analyst</h3>
+                        <p>Some representative placeholder content for the third slide.</p>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <img src="https://images.unsplash.com/photo-1657727534685-36b09f84e193?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="d-block w-100" alt="..." style="height: 500px;">
+                      <div class="carousel-caption d-none d-md-block">
+                        <h3>System Analyst</h3>
+                        <p>Some representative placeholder content for the fourth slide.</p>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <img src="https://plus.unsplash.com/premium_photo-1706259481452-f857c96ceaca?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="d-block w-100" alt="..." style="height: 500px;">
+                      <div class="carousel-caption d-none d-md-block">
+                        <h3>Project Management</h3>
+                        <p>Some representative placeholder content for the Fifth slide.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+
+          <!-- Footer -->
+          <footer class="bg-dark text-light py-4 mt-5">
+          <div class="container" id="footer">
+            <div class="row">
+              <!-- Kolom 1 -->
+              <div class="col-md-4 mb-3">
+                <h5>About Us</h5>
+                <p>Kami adalah tim kreatif yang fokus pada pengembangan Web.</p>
+              </div>
+
+              <!-- Kolom 2 -->
+              <div class="col-md-4 mb-3">
+                <h5>Links</h5>
+                <ul class="list-unstyled">
+                  <li><a href="#home-page" class="text-light text-decoration-none">Beranda</a></li>
+                  <li><a href="#About-me" class="text-light text-decoration-none">About Me</a></li>
+                  <li><a href="#MyProjects" class="text-light text-decoration-none">Projects</a></li>
+                </ul>
+              </div>
+
+              <!-- Kolom 3 -->
+              <div class="col-md-4 mb-3">
+                <h5>Kontak Kami</h5>
+                <p>Email: myprojectexample@gmail.com
+                  <br>Telp: +62 812-3456-9999
+                  <br>Telp-2 : (021) 53557777
+                </p>
+                <div>
+                  <a href="#" class="text-light me-2"><i class="bi bi-facebook"></i></a>
+                  <a href="#" class="text-light me-2"><i class="bi bi-instagram"></i></a>
+                  <a href="#" class="text-light"><i class="bi bi-twitter"></i></a>
+                </div>
+              </div>
+            </div>
+
+    <hr class="border-light">
+    <div class="text-center small">&copy; 2025 Akhmad Subhan. All rights reserved.</div>
+  </div>
+</footer>
+
+    
+    
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+    
+     <!-- JavaScript untuk Menampilkan Gambar Berdasarkan Kategori -->
+  <script>
+    function filterGallery(category) {
+      // Menyembunyikan semua kategori gambar
+      const allCategories = document.querySelectorAll('.category-images');
+      allCategories.forEach(function (categoryDiv) {
+        categoryDiv.style.display = 'none';
+      });
+
+      // Menampilkan kategori yang dipilih
+      if (category === 'all') {
+        allCategories.forEach(function (categoryDiv) {
+          categoryDiv.style.display = 'block';
+        });
+      } else {
+        const selectedCategory = document.getElementById(category);
+        if (selectedCategory) {
+          selectedCategory.style.display = 'block';
+        }
+      }
+    }
+
+    // Menampilkan semua gambar ketika halaman dimuat
+    window.onload = function() {
+      filterGallery('all');
+    }
+  </script>
+
+</body>
+</html>
